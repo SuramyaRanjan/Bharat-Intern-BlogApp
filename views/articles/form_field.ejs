@@ -1,0 +1,16 @@
+<div class="form-group mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input required value="<%= article ? article.title : '' %>" type="text" name="title" class="form-control" id="title" placeholder="Enter the title">
+</div>
+<div class="form-group mb-3">
+    <label for="description" class="form-label">Description</label>
+    <textarea name="description" id="description" class="form-control" rows="3" placeholder="Enter the description"><%= article ? article.description : '' %></textarea>
+</div>
+<div class="form-group mb-3">
+    <label for="markdown" class="form-label">Markdown</label>
+    <textarea required name="markdown" id="markdown" class="form-control" rows="10" placeholder="Enter the markdown content"><%= article ? article.markdown : '' %></textarea>
+</div>
+<div class="d-flex justify-content-between">
+    <a href="/" class="btn btn-secondary">Cancel</a>
+    <button type="submit" class="btn btn-primary">Save</button>
+</div>
